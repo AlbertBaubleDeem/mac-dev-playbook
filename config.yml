@@ -114,7 +114,6 @@ homebrew_installed_packages:
   - vscode-langservers-extracted
   - wget
   - xmlstarlet
-  - youtube-dl
   - yt-dlp
   - zbar
   - zsh
