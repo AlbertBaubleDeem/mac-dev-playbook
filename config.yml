@@ -1,0 +1,234 @@
+---
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove: []
+# - Launchpad
+# - TV
+# - Podcasts
+# - 'App Store'
+dockitems_persist: []
+# - name: "iTerm2"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+configure_sudoers: false
+sudoers_custom_config: ''
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/AlbertBaubleDeem/.dotfiles
+dotfiles_repo_version: macos  # Specify the branch here
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/.dotfiles
+dotfiles_files:
+  - .zshrc
+  - .tmux.conf
+  - .bashrc 
+  - .vimrc
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - bash
+  - bat
+  - brogue
+  - convmv
+  - coreutils
+  - croc
+  - dialog # https://linuxcommand.org/lc3_adv_dialog.php
+  - diffutils
+  - duti
+  - figlet
+  - findutils
+  - fzf
+  - gawk
+  - gh
+  - git
+  - git-filter-repo
+  - git-gui
+  - gnu-getopt
+  - gnu-indent
+  - gnu-sed
+  - gnu-tar
+  - gptfdisk
+  - graphicsmagick
+  - grep
+  - gromgit/fuse/archivemount-mac
+  - gzip
+  - handbrake
+  # - hping Disabled as it is unmaintained.
+  - htop
+  - ios-webkit-debug-proxy
+  - ipcalc
+  - iperf
+  - iperf3
+  - iproute2mac
+  - jq
+  - kubernetes-cli
+  - libpst
+  - libxslt
+  - lunchy
+  - lynx
+  - magic-wormhole
+  - man-db
+  - mas
+  - media-info
+  - mkcert
+  - mosh
+  - newsboat # https://newsboat.org/
+  - nmap
+  - ocrmypdf
+  - openconnect
+  - openjdk
+  - openvpn
+  - pidof
+  - poppler
+  - pv
+  - python-tk@3.13
+  - qrencode
+  - rclone
+  - rogue
+  - scour
+  - scrcpy
+  - screen
+  - sevenzip
+  - shellcheck
+  - shfmt
+  - showkey
+  - signify-osx
+  - sl
+  - speedtest-cli
+  - syncthing
+  - telnet
+  - tesseract-lang
+  - tldr
+  - tmux
+  - tree
+  - vim
+  - vldmrkl/formulae/airdrop-cli
+  - vscode-langservers-extracted
+  - wget
+  - xmlstarlet
+  - youtube-dl
+  - yt-dlp
+  - zbar
+  - zsh
+  - zsh-syntax-highlighting
+
+homebrew_taps:
+- gromgit/fuse
+- homebrew/services
+- vldmrkl/formulae
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - google-chrome
+  - android-file-transfer
+  - android-platform-tools
+  - arduino-ide
+  - barrier
+  - bettertouchtool
+  - blender
+  - calibre
+  - clipy
+  - cursor
+  - darktable
+  - discord
+  - docker
+  - firefox
+  - flycut
+  - gimp
+  - handbrake
+  - inkscape
+  - iterm2
+  - jellyfin # better in CONTAINER
+  - joplin
+  - keepassxc
+  - key-codes
+  - keycastr
+  - lulu
+  - macfuse
+  - mediainfo
+  - microsoft-remote-desktop
+  - mongodb-compass
+  - mounty
+  - onyx
+  - postman
+  - powershell
+  - rar
+  - signal
+  - slack
+  - stats
+  - tigervnc-viewer
+  - upscayl
+  - veracrypt
+  - visual-studio-code
+  - vlc
+  - vscodium
+  - whatsapp
+  - zoom
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - 497799835   #Xcode
+  - 1460539461  #MyStreamTimer
+  - 408981434   #iMovie
+  - 1453365242  #Brother
+  - 1474276998  #HP
+  - 1499052260  #Color
+  - 414568915   #Key
+  - 6444050820  #Draw
+  - 533696630   #Webcam
+  - 919472673   #PDF
+  - 682658836   #GarageBand
+  - 897446215   #Canva
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
+sublime_base_path: []
+sublime_config_path: []
+sublime_package_control: []
+#  - "DocBlockr"
+#  - "Dockerfile Syntax Highlighting"
+#  - "FileDiffs"
+#  - "GitHub Flavored Markdown Preview"
+#  - "Jinja2"
+#  - "Package Control"
+#  - "PHP-Twig"
+#  - "Pretty JSON"
+#  - "SublimeLinter"
+#  - "SublimeLinter-contrib-yamllint"
+#  - "TrailingSpaces"
+#  - "WordCount"
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
