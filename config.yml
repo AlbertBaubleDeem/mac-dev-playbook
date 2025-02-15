@@ -137,11 +137,13 @@ homebrew_cask_apps:
   - clipy
   - cursor
   - darktable
+  - deepl
   - discord
   - docker
   - firefox
   - flycut
   - gimp
+  - google-drive
   - handbrake
   - inkscape
   - iterm2
@@ -152,11 +154,13 @@ homebrew_cask_apps:
   - keycastr
   - lulu
   - macfuse
+  - macs-fan-control
   - mediainfo
   - microsoft-remote-desktop
   - mongodb-compass
   - mounty
   - onyx
+  - obsidian
   - postman
   - powershell
   - rar
